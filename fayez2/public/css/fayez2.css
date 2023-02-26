@@ -11,24 +11,95 @@
     color: #ff0000;
 }
 
+
+
+/*
+ol, ul, dl {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+*/
+
+.form-tabs-list {
+	position: ;
+	position: sticky;
+	background-color: var(--card-bg);
+	z-index: 5;
+	transition: 0.5s top;
+	padding-right: var(--padding-xs);
+	border-bottom: 0px solid var(--border-color);
+	border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+}
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	padding-right: 0;
+/*	margin-bottom: 0;*/
+	list-style: none;
+}
+.form-control::placeholder {
+  color: #01090F;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body {
     margin: 0;
     font-family: 'Almarai', sans-serif;
     font-size: 0.875rem;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.5;
     color: var(--text-light);
     text-align: right;
     background-color: #fff;
 }
+.widget .widget-head .widget-label .widget-title {
+  display: flex;
+  align-items: center;
+  font-size: var(--text-lg);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.3em;
+  color: var(--heading-color);
+  cursor: default;
+}
 .widget .widget-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: black
+    background-color: #cdb4db;
+	padding: 4px 8px;
 }
 
-*
+.list-unstyled, .list-inline {
+	padding-right: 0;
+	list-style: none;
+	padding: 20px 15px;
+	color: #a80d0d;
+	background-color: #fff;
+}
+.page-form {
+    margin: 0;
+    padding: var(--padding-sm);
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #cdb4db;
+    border-bottom: 1px solid var(--border-color);
+}
 {
 
     scrollbar-width: thin;
@@ -274,20 +345,28 @@ header .form-control:focus{
 
 /* Sidebar */
 .layout-side-section .sidebar-label{
-    color: var(--primary-color);
+    color: #000;
 }
 .sidebar-label svg,
 .layout-side-section .sidebar-label .icon{
     stroke: var(--primary-color);
 }
+
+
+/* ala ganbbbbbbbb */
+
 .list-sidebar-button{
-    background-color: #c8c4c4 !important;
+    background-color: #fbfbfb !important;
     box-shadow: none !important;
 }
 .list-sidebar-button:active,
 .list-sidebar-button:focus{
     text-decoration: none !important;
     box-shadow: none !important;
+}
+a.grey, .sidebar-section a, .control-value a, .data-row a {
+	text-decoration: none;
+	color: black;
 }
 
 
@@ -301,7 +380,7 @@ input{
 }
 .form-control:focus{
     outline: 0;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #000;
     box-shadow: none;
     background: #17a2b800 !important;
 }
@@ -372,4 +451,3 @@ symbol#icon-small-down{
 .filter-button span.filter-icon svg.icon{
     stroke: var(--white-color);
 } */
-
